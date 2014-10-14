@@ -19,7 +19,6 @@
     [super viewDidLoad];
     
     self.currentScore = 0;
-    [[GCHelper defaultHelper] authenticateLocalUserOnViewController:self setCallbackObject:nil withPauseSelector:nil];
 
 }
 
@@ -31,7 +30,7 @@
 }
 
 - (IBAction)showLeaderboard:(id)sender {
-    [[GCHelper defaultHelper] showLeaderboardOnViewController:self];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,8 +38,6 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)submitScore:(id)sender {
-    NSLog(@"%lld",self.currentScore);
-    [[GCHelper defaultHelper] reportScore:self.currentScore forLeaderboardID:kLeaderboardID];
 }
 
 
@@ -71,7 +68,6 @@
 }
 
 - (IBAction)resetPressed:(id)sender {
-    [[GCHelper defaultHelper] resetAchievements];
 }
 
 
