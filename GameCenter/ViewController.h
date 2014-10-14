@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
 
 @interface ViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UILabel *puntosLabel;
+@property (nonatomic, assign) int64_t currentScore;
+
 
 
 @end

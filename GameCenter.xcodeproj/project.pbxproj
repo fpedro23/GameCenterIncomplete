@@ -14,6 +14,8 @@
 		EB33BEE419ED87BF00BCB7D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB33BEE319ED87BF00BCB7D4 /* Images.xcassets */; };
 		EB33BEE719ED87BF00BCB7D4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB33BEE519ED87BF00BCB7D4 /* LaunchScreen.xib */; };
 		EB33BEF319ED87BF00BCB7D4 /* GameCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33BEF219ED87BF00BCB7D4 /* GameCenterTests.m */; };
+		EB33BEFD19ED87DF00BCB7D4 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB33BEFC19ED87DF00BCB7D4 /* GameKit.framework */; };
+		EB33BF0419ED929E00BCB7D4 /* GCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB33BF0319ED929E00BCB7D4 /* GCHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		EB33BEEC19ED87BF00BCB7D4 /* GameCenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameCenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB33BEF119ED87BF00BCB7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB33BEF219ED87BF00BCB7D4 /* GameCenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameCenterTests.m; sourceTree = "<group>"; };
+		EB33BEFC19ED87DF00BCB7D4 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		EB33BF0219ED929E00BCB7D4 /* GCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCHelper.h; sourceTree = "<group>"; };
+		EB33BF0319ED929E00BCB7D4 /* GCHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCHelper.m; sourceTree = "<group>"; };
+		EB33BF0519ED949300BCB7D4 /* AppSpecificValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSpecificValues.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB33BEFD19ED87DF00BCB7D4 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,7 @@
 		EB33BECA19ED87BF00BCB7D4 = {
 			isa = PBXGroup;
 			children = (
+				EB33BEFC19ED87DF00BCB7D4 /* GameKit.framework */,
 				EB33BED519ED87BF00BCB7D4 /* GameCenter */,
 				EB33BEEF19ED87BF00BCB7D4 /* GameCenterTests */,
 				EB33BED419ED87BF00BCB7D4 /* Products */,
@@ -81,6 +89,9 @@
 		EB33BED519ED87BF00BCB7D4 /* GameCenter */ = {
 			isa = PBXGroup;
 			children = (
+				EB33BF0519ED949300BCB7D4 /* AppSpecificValues.h */,
+				EB33BF0219ED929E00BCB7D4 /* GCHelper.h */,
+				EB33BF0319ED929E00BCB7D4 /* GCHelper.m */,
 				EB33BEDA19ED87BF00BCB7D4 /* AppDelegate.h */,
 				EB33BEDB19ED87BF00BCB7D4 /* AppDelegate.m */,
 				EB33BEDD19ED87BF00BCB7D4 /* ViewController.h */,
@@ -222,6 +233,7 @@
 				EB33BEDF19ED87BF00BCB7D4 /* ViewController.m in Sources */,
 				EB33BEDC19ED87BF00BCB7D4 /* AppDelegate.m in Sources */,
 				EB33BED919ED87BF00BCB7D4 /* main.m in Sources */,
+				EB33BF0419ED929E00BCB7D4 /* GCHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
