@@ -75,5 +75,11 @@
 }
 
 
+- (IBAction)resetScore:(id)sender {
+    self.currentScore =0;
+    self.puntosLabel.text = [NSString stringWithFormat:@"%lld",self.currentScore];
+}
+
+
 
 @end
